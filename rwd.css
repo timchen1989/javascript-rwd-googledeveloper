@@ -1,0 +1,144 @@
+/*Tag Selector*/
+body{
+    margin: 0px;
+}
+a{
+    color: rgba(0,0,0,.54);
+    text-decoration: none;/*超連結去底線*/
+}
+ul{
+    overflow: hidden;
+    list-style-type: none;/*list將沒有點的圖示*/
+    margin: 0;
+    padding: 0;
+
+    display: block;/*設定ul要不要顯示*/
+}
+li{
+    padding-right: 20px;
+    float: left;
+    font-size: 15px;
+}
+
+/*上層-切版設定*/
+.frame{
+    display: flex;
+    
+    justify-content: left;
+
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:7px;
+    padding-bottom:6px;
+    border-bottom: 1px solid #bdbdbd;
+}
+.left{
+    display: flex;
+    width: 181px;
+    height: 36px;
+    padding:0px 20px;
+}
+.center_box{
+    width: 55%;
+    
+    display: flex;
+    flex: 1 1 0;/*神秘的設定，用了之後右邊的區塊可以自動靠在他那邊*/
+}
+.center{
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+}
+.right{
+    display: flex;
+
+    justify-content: center;
+    
+}
+
+/*控制中間區塊因為寬度調整內容的顯示*/
+.blog_div{
+    display: block;
+}
+.google_div{
+    display: block;
+}
+.arrow_right{
+    display: none;
+}
+
+/*上層-右邊-登入紐*/
+.sign_btn{
+    color: rgba(0, 0, 0, 0.54);
+    background-color: white; 
+    border:0px; 
+    font-size:14px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/*上層-右邊-Language欄與其RWD控制*/
+.language{
+    display: block;
+    margin-right:15px;
+    padding:9px 5px; 
+    color: rgba(0, 0, 0, 0.54); 
+    border-color: rgb(235, 235, 235); 
+    border-radius: 2px; 
+    font-weight: bold;
+}
+@media (max-width:1200px){
+    .language{
+        display: none;
+    }
+}
+/*上層-左邊-Logo彩色*/ /*有趣的地方 img的寬度好像無法根據被外面包的外層，做預設的設定，需要自己另外設定寬度*/
+.logo{
+    width: inherit;
+}
+/*上-左-MenuImage*/
+.menu{
+    width: 20px; 
+    height: 16px;
+}
+/*上層-左-Logo灰與Logo彩色因寬度調整的RWD設定*/
+.logo_img{
+    width: inherit;
+    display: block;
+}
+.logo_short{
+    display: none;
+}
+@media (max-width:720px){
+    .logo_img{
+        display: none;
+    }
+    .center{
+        display: none;
+    }
+    .logo_short{    
+        display: block;
+        padding-right: 15px;
+        font-size: 20px;
+    }
+    ul{
+        display: none;
+    }
+}
+/*上-中-list內容因寬度調整與其RWD設定*/
+@media (max-width:950px){
+    .center_box{
+        width: 50%;
+    }
+    .blog_div{
+        display: none;
+    }
+    .arrow_right{
+        display: block;
+    }
+}
+@media (max-width:880px){
+    .google_div{
+        display: none;
+    }
+}

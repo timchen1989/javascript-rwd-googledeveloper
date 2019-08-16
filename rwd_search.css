@@ -1,0 +1,22 @@
+/*Tag Selector*/
+
+/**/
+.search_frame{
+    text-align: center;
+}
+.slogn_block{
+    padding:40px 24px 20px 24px;
+}
+.slogn_content{
+    font: 400 44px/52px Google Sans,sans-serif;
+}
+.search_field{
+    width:80%; 
+    border: 0;
+    background-color: #f7f7f7;
+    color: rgba(0,0,0,.54);
+    height: 36px;
+    padding: 2px 8px 2px 72px; 
+    border-radius: 2px;
+    font: 16px/20px Roboto,sans-serif;
+}
