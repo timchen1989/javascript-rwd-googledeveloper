@@ -1,0 +1,106 @@
+/*Tag selector*/
+body{
+    color: #212121;
+    font: 400 16px/24px Roboto,sans-serif;
+}
+h3{
+    color: #039be5;
+    font: 400 22px/30px Google Sans,sans-serif;
+    padding-left: 15px;
+    margin:15px 0px;
+    
+}
+p{
+    padding:15px 15px 5px 15px;
+}
+
+/* learn more 文字效果*/
+.learnmore{
+    padding-left: 15px; 
+    font-weight: bold; 
+    color: #039be5;
+}
+
+/*切出Events的整個大塊*/
+.events_frame{
+    background-color: #f7f7f7;
+    
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+    align-items: center;
+    padding-top: 35px;
+}
+
+/*切出Events文字部分的區塊*/
+.events_label_frame{
+    display: flex;
+    
+    flex: 1 1 0;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+/*切出整個有多個Event的區塊*/
+.event_block{
+    display: flex;
+    justify-content: center;
+
+    
+    flex-wrap: wrap;    
+    align-items: center;
+}
+/*單個Event內容部分的區塊*/
+.event{
+    width: 35%;
+    background-color: white; 
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    padding-bottom: 10px;
+    margin-right: 5%;
+}
+
+
+/*event label的文字部分設定*/
+.event_label{
+    padding-left:10%; 
+    font-size:30px;
+}
+
+/*event frame space中間的空白*/
+.event_space{
+    width: 61%;
+}
+
+/*view all label文字設定*/
+.viewall_lavel{
+    color: #039be5;
+    font-size:14px; 
+    font-weight: bold;
+}
+
+/*RWD的撰寫有順序性，當條件符合後，網頁會重新load CSS設定，並針對有符合條件的設定由上到下一個一個跑一遍*/
+@media (max-width:1000px){
+    .event{
+        width: 40%;
+    }
+}
+
+@media (max-width:720px){
+    .event{
+        width:90%;
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+    .event_label{
+        width:100%;
+        margin-bottom: 5%;
+    }
+    .event_space{
+        width:100%;
+    }
+    .viewall_lavel{
+        margin-top:5px;
+        margin-left:10%;
+        
+    }
+}
+
